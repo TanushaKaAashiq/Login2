@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ngl U r smart</title>
+<link rel="stylesheet" href="loginvid.css">
+<link rel="shortcut icon" href="qmark.png" type="image/x-icon">
+</head>
+<body>
+
+<div id="login-container" class="whole">
+  <h2 class="login">Login</h2>
+  <form id="login-form">
+    <label for="username" class="tag">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password" class="tag">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("login-form").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+  
+  
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  if (username === "pyaritanusha" && password === "batman") {
+    window.location.href = "https://chitranshguha.github.io/heartpop/"; 
+  } else {
+    alert("Invalid username or password. Please try again.");
+  }
+});
+</script>
+
+</body>
+</html>
